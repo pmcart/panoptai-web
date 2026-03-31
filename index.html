@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PanoptAI — AI Usage Compliance Ledger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Panopt<span class="logo-ai">AI</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-ghost">Sign in</a>
+        <a href="#contact" class="btn btn-primary">Request access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now in private beta — limited access available
+      </div>
+      <h1 class="hero-title">
+        Every AI interaction.<br />
+        <span class="gradient-text">One audit-ready ledger.</span>
+      </h1>
+      <p class="hero-sub">
+        PanoptAI is the system of record for enterprise AI usage. Capture, classify, and govern how your employees and systems use AI across every tool — ChatGPT, Claude, Cursor, Gemini, and beyond.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Request early access</a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">See how it works →</a>
+      </div>
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">AI surfaces captured</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Raw prompts stored by default</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">Real-time</span>
+          <span class="stat-label">Policy evaluation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="logo-bar">
+    <div class="container">
+      <p class="logo-bar-label">Monitors activity across</p>
+      <div class="logo-bar-items">
+        <span class="tool-badge">ChatGPT</span>
+        <span class="tool-badge">Claude</span>
+        <span class="tool-badge">Gemini</span>
+        <span class="tool-badge">Cursor</span>
+        <span class="tool-badge">Windsurf</span>
+        <span class="tool-badge">Copilot</span>
+        <span class="tool-badge">Perplexity</span>
+        <span class="tool-badge">Claude Code</span>
+        <span class="tool-badge">Internal APIs</span>
+        <span class="tool-badge tool-badge-more">+ any AI surface</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-label">The problem</div>
+      <h2 class="section-title">AI adoption is accelerating.<br />Governance isn't.</h2>
+      <p class="section-sub">Your employees are using dozens of AI tools. You have no idea what they're sending — or to whom.</p>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">⚠</div>
+          <h3>No unified visibility</h3>
+          <p>ChatGPT, Claude, Cursor, and internal APIs each have separate logs — if any at all. There is no single view of AI activity across your organisation.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔓</div>
+          <h3>Sensitive data leakage</h3>
+          <p>PII, source code, contracts, and credentials are entering third-party AI systems every day. Most companies find out after the fact — or never.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">👤</div>
+          <h3>Shadow AI usage</h3>
+          <p>Employees use personal accounts, unapproved tools, and browser extensions outside IT visibility. Your DLP doesn't see it. Neither does your SIEM.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📋</div>
+          <h3>No audit trail</h3>
+          <p>When an incident happens — a data breach, a compliance query, an IP dispute — you have no reliable record of what was sent to which AI, by whom, and when.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="callout-icon">💡</span>
+        <p>OpenAI and Anthropic only log activity <em>inside their own platforms</em>. No vendor provides cross-tool governance. <strong>That gap is your exposure.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-dark" id="how-it-works">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">Every interaction becomes<br />a ledger entry.</h2>
+      <p class="section-sub">A six-stage pipeline turns raw AI activity into structured, policy-evaluated, audit-ready records.</p>
+
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="pipeline-num">01</div>
+          <div class="pipeline-content">
+            <h3>Capture</h3>
+            <p>Browser extension, Claude Code hooks, API gateway, and agent transcripts collect interactions at the source — across every tool and surface.</p>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-num">02</div>
+          <div class="pipeline-content">
+            <h3>Normalize</h3>
+            <p>Each event is standardised into a common schema regardless of which AI tool produced it. One format. One store.</p>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-num">03</div>
+          <div class="pipeline-content">
+            <h3>Enrich</h3>
+            <p>Workers classify sensitivity (PII, secrets, IP, code), identify the tool and model, resolve user identity, and compute a risk score.</p>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-num">04</div>
+          <div class="pipeline-content">
+            <h3>Evaluate</h3>
+            <p>Each record is checked against your policy engine in real time. Violations trigger alerts. High-risk interactions can be blocked at the proxy layer.</p>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-num">05</div>
+          <div class="pipeline-content">
+            <h3>Store</h3>
+            <p>The enriched record is appended to the immutable ledger. Raw content is never required — metadata, hashes, and risk signals are sufficient for most compliance needs.</p>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="pipeline-num">06</div>
+          <div class="pipeline-content">
+            <h3>Expose</h3>
+            <p>Dashboards, real-time alerts, and exportable reports give security, compliance, and leadership teams the visibility they need.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTURE COVERAGE -->
+  <section class="section" id="capture">
+    <div class="container">
+      <div class="section-label">Capture strategy</div>
+      <h2 class="section-title">High-confidence coverage<br />across every major surface.</h2>
+      <p class="section-sub">You don't need to capture everything. You need to capture enough to know when something is wrong.</p>
+
+      <div class="capture-grid">
+        <div class="capture-group">
+          <div class="capture-group-label capture-group-primary">Core coverage (v1)</div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-green"></span>
+            <div>
+              <strong>Claude Code</strong>
+              <span>Hooks + session transcripts — full tool call visibility</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-green"></span>
+            <div>
+              <strong>Browser AI tools</strong>
+              <span>Chrome extension — ChatGPT, Claude, Gemini, Copilot, Perplexity, and more</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-green"></span>
+            <div>
+              <strong>API gateway</strong>
+              <span>Sanctioned OpenAI / Anthropic / Gemini API usage via proxy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="capture-group">
+          <div class="capture-group-label capture-group-secondary">Expanding coverage</div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-blue"></span>
+            <div>
+              <strong>Cursor &amp; Windsurf</strong>
+              <span>Enterprise telemetry APIs</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-blue"></span>
+            <div>
+              <strong>VS Code ecosystem</strong>
+              <span>Companion extension for Copilot and AI plugins</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-blue"></span>
+            <div>
+              <strong>ChatGPT desktop</strong>
+              <span>Telemetry-based visibility</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="capture-group">
+          <div class="capture-group-label capture-group-future">Enterprise integrations</div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-grey"></span>
+            <div>
+              <strong>DLP / SIEM / CASB</strong>
+              <span>Bi-directional event feeds</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-grey"></span>
+            <div>
+              <strong>Endpoint telemetry</strong>
+              <span>Full desktop agent coverage</span>
+            </div>
+          </div>
+          <div class="capture-item">
+            <span class="capture-dot capture-dot-grey"></span>
+            <div>
+              <strong>Identity providers</strong>
+              <span>Okta, Azure AD, Google Workspace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-dark" id="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything your security and<br />compliance team needs.</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Risk scoring</h3>
+          <p>Every interaction is scored low → critical based on data sensitivity, destination tool, user role, and policy match. Prioritise what matters.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡</div>
+          <h3>Policy engine</h3>
+          <p>Define rules for what can and cannot be sent to which AI tools. Violations are flagged in real time; enforcement can block at the proxy layer.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Usage analytics</h3>
+          <p>Understand which teams use which tools, at what volume, and with what risk profile. Track adoption trends across the organisation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🕵️</div>
+          <h3>Shadow AI detection</h3>
+          <p>Identify usage of unapproved AI tools and personal accounts outside IT visibility. Quantify your unmanaged AI surface.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Agent monitoring</h3>
+          <p>Capture tool calls, file reads, code execution, and web actions taken by coding agents like Claude Code and Cursor Composer.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>Compliance reports</h3>
+          <p>Generate audit-ready exports for SOC 2, ISO 27001, GDPR reviews, and internal investigations. Timestamped, immutable, exportable.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Real-time alerts</h3>
+          <p>Slack and email notifications for policy violations, high-risk events, and anomalous usage patterns as they happen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔎</div>
+          <h3>Incident investigation</h3>
+          <p>Full session replay and timeline view for any user. When something goes wrong, you have the complete record to investigate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="section" id="privacy">
+    <div class="container">
+      <div class="section-label">Privacy by design</div>
+      <h2 class="section-title">"We are a governance layer.<br />Not a prompt warehouse."</h2>
+      <p class="section-sub">The biggest objection to AI monitoring is storing sensitive content in a third-party system. We designed the product around that constraint from day one.</p>
+
+      <div class="storage-modes">
+        <div class="storage-mode storage-mode-default">
+          <div class="storage-mode-badge">Default</div>
+          <h3>Metadata only</h3>
+          <p>No raw prompt content is stored. Only risk scores, classification labels, content hashes, user identity, tool, and timestamp. Sufficient for most compliance requirements.</p>
+        </div>
+        <div class="storage-mode">
+          <h3>Redacted content</h3>
+          <p>Sensitive values (PII, secrets, code tokens) are stripped before storage. Partial context is retained for policy review and investigation without raw exposure.</p>
+        </div>
+        <div class="storage-mode">
+          <h3>Customer-controlled storage</h3>
+          <p>Raw interaction data is stored in your own cloud environment (AWS S3, Azure Blob, GCP). PanoptAI stores only references and findings — not the content itself.</p>
+        </div>
+        <div class="storage-mode">
+          <h3>Self-hosted</h3>
+          <p>Full on-premise or VPC deployment for regulated industries. Zero data leaves your environment. Available for enterprise contracts.</p>
+        </div>
+      </div>
+
+      <div class="privacy-pillars">
+        <div class="privacy-pillar">
+          <span>🔐</span>
+          <span>Local inspection before upload</span>
+        </div>
+        <div class="privacy-pillar">
+          <span>🔒</span>
+          <span>Encryption in transit and at rest</span>
+        </div>
+        <div class="privacy-pillar">
+          <span>👁</span>
+          <span>Strict role-based access controls</span>
+        </div>
+        <div class="privacy-pillar">
+          <span>🗓</span>
+          <span>Configurable retention policies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section class="section section-dark" id="positioning">
+    <div class="container">
+      <div class="analogy-block">
+        <p class="analogy-label">The analogy that makes it click</p>
+        <div class="analogy-row">
+          <div class="analogy-item">
+            <span class="analogy-co">OpenAI / Anthropic</span>
+            <span class="analogy-is">are cloud providers</span>
+          </div>
+          <div class="analogy-divider">—</div>
+          <div class="analogy-item">
+            <span class="analogy-co">PanoptAI</span>
+            <span class="analogy-is">is Datadog + Okta + Splunk<br />for AI usage</span>
+          </div>
+        </div>
+        <p class="analogy-footnote">They log inside their platforms. We govern across all of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Start with a free audit.<br />Upgrade when you see the risk.</h2>
+      <p class="section-sub">Most customers discover material risk within the first 48 hours.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-tier">Audit</div>
+          <div class="pricing-price">Free</div>
+          <div class="pricing-desc">A 14-day read-only deployment to show you what's happening. No credit card. No commitment.</div>
+          <ul class="pricing-features">
+            <li>Browser extension capture</li>
+            <li>Claude Code integration</li>
+            <li>Risk report at end of trial</li>
+            <li>Shadow AI detection</li>
+            <li>Up to 5 users</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Start free audit</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-tier">Govern</div>
+          <div class="pricing-price">$12<span>/user/mo</span></div>
+          <div class="pricing-desc">Full governance for teams actively using AI tools.</div>
+          <ul class="pricing-features">
+            <li>Everything in Audit</li>
+            <li>Policy engine</li>
+            <li>Real-time alerts (Slack + email)</li>
+            <li>API gateway proxy</li>
+            <li>Compliance report exports</li>
+            <li>Customer-controlled storage</li>
+            <li>Unlimited users</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Request access</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-desc">For regulated industries and large-scale deployments.</div>
+          <ul class="pricing-features">
+            <li>Everything in Govern</li>
+            <li>Self-hosted / VPC deployment</li>
+            <li>SIEM / DLP / CASB integrations</li>
+            <li>Endpoint telemetry agent</li>
+            <li>Identity provider SSO</li>
+            <li>SLA + dedicated support</li>
+            <li>Custom data residency</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="section section-cta" id="contact">
+    <div class="container">
+      <div class="cta-block">
+        <div class="cta-glow"></div>
+        <h2 class="cta-title">Are your employees leaking sensitive data into AI tools?</h2>
+        <p class="cta-sub">Most companies don't know. A 14-day audit will tell you — at no cost, with no disruption to employees.</p>
+        <form class="cta-form" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Work email" required />
+          <input type="text" placeholder="Company" required />
+          <select>
+            <option value="" disabled selected>Company size</option>
+            <option>1–50</option>
+            <option>51–200</option>
+            <option>201–1000</option>
+            <option>1000+</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-lg">Request early access</button>
+        </form>
+        <p class="cta-footnote">No credit card. No sales call required. Results in 48 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Panopt<span class="logo-ai">AI</span></span>
+          </a>
+          <p>The AI usage compliance ledger for enterprise governance.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#how-it-works">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Security</a>
+            <a href="#">DPA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PanoptAI. All rights reserved.</span>
+        <span>Built for security teams, compliance officers, and the CISOs who sleep less than they should.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
