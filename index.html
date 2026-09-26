@@ -3,22 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PanoptAI — AI Usage Compliance Ledger</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <title>PanoptAI — AI Usage Monitoring &amp; Compliance Ledger</title>
+  <meta name="description" content="Monitor and govern employee AI usage across ChatGPT, Claude, Cursor and Gemini. PanoptAI gives security and compliance teams one audit-ready ledger." />
+  <link rel="canonical" href="https://www.panoptai.io/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0a0b0f" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://panoptai-contact.netlify.app; object-src 'none'; base-uri 'self'; form-action 'self'" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PanoptAI" />
+  <meta property="og:title" content="PanoptAI — AI Usage Monitoring &amp; Compliance Ledger" />
+  <meta property="og:description" content="Every AI interaction. One audit-ready ledger. Capture, classify and govern how your employees use ChatGPT, Claude, Cursor, Gemini and more." />
+  <meta property="og:url" content="https://www.panoptai.io/" />
+  <meta property="og:image" content="https://www.panoptai.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="PanoptAI — Every AI interaction. One audit-ready ledger." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PanoptAI — AI Usage Monitoring &amp; Compliance Ledger" />
+  <meta name="twitter:description" content="Every AI interaction. One audit-ready ledger. Capture, classify and govern how your employees use ChatGPT, Claude, Cursor, Gemini and more." />
+  <meta name="twitter:image" content="https://www.panoptai.io/og-image.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.panoptai.io/#organization",
+        "name": "PanoptAI",
+        "url": "https://www.panoptai.io/",
+        "logo": "https://www.panoptai.io/apple-touch-icon.png",
+        "description": "PanoptAI is the AI usage compliance ledger for enterprise governance."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.panoptai.io/#website",
+        "url": "https://www.panoptai.io/",
+        "name": "PanoptAI",
+        "publisher": { "@id": "https://www.panoptai.io/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "PanoptAI",
+        "url": "https://www.panoptai.io/",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Web, Chrome, Edge",
+        "description": "Captures, classifies and governs employee AI usage across ChatGPT, Claude, Cursor, Gemini and other AI tools, and stores it in an audit-ready ledger with policy evaluation and risk scoring.",
+        "publisher": { "@id": "https://www.panoptai.io/#organization" },
+        "offers": [
+          { "@type": "Offer", "name": "Audit", "price": "0", "priceCurrency": "USD", "description": "14-day read-only deployment, up to 5 users." },
+          { "@type": "Offer", "name": "Govern", "price": "12", "priceCurrency": "USD", "description": "Per user per month." }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-icon">⬡</span>
+  <header class="nav">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="/" class="logo">
+        <span class="logo-icon" aria-hidden="true">⬡</span>
         <span class="logo-text">Panopt<span class="logo-ai">AI</span></span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-menu">
         <li><a href="#problem">Problem</a></li>
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="#features">Features</a></li>
@@ -29,16 +92,21 @@
         <a href="#contact" class="btn btn-ghost">Sign in</a>
         <a href="#contact" class="btn btn-primary">Request access</a>
       </div>
-    </div>
-  </nav>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow"></div>
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-badge">
-        <span class="badge-dot"></span>
+        <span class="badge-dot" aria-hidden="true"></span>
         Now in private beta — limited access available
       </div>
       <h1 class="hero-title">
@@ -57,12 +125,12 @@
           <span class="stat-num">12+</span>
           <span class="stat-label">AI surfaces captured</span>
         </div>
-        <div class="hero-stat-divider"></div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
         <div class="hero-stat">
           <span class="stat-num">0</span>
           <span class="stat-label">Raw prompts stored by default</span>
         </div>
-        <div class="hero-stat-divider"></div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
         <div class="hero-stat">
           <span class="stat-num">Real-time</span>
           <span class="stat-label">Policy evaluation</span>
@@ -72,7 +140,7 @@
   </section>
 
   <!-- LOGO BAR -->
-  <section class="logo-bar">
+  <section class="logo-bar" aria-label="Supported AI tools">
     <div class="container">
       <p class="logo-bar-label">Monitors activity across</p>
       <div class="logo-bar-items">
@@ -99,29 +167,29 @@
 
       <div class="problem-grid">
         <div class="problem-card">
-          <div class="problem-icon">⚠</div>
+          <div class="problem-icon" aria-hidden="true">⚠</div>
           <h3>No unified visibility</h3>
           <p>ChatGPT, Claude, Cursor, and internal APIs each have separate logs — if any at all. There is no single view of AI activity across your organisation.</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">🔓</div>
+          <div class="problem-icon" aria-hidden="true">🔓</div>
           <h3>Sensitive data leakage</h3>
           <p>PII, source code, contracts, and credentials are entering third-party AI systems every day. Most companies find out after the fact — or never.</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">👤</div>
+          <div class="problem-icon" aria-hidden="true">👤</div>
           <h3>Shadow AI usage</h3>
           <p>Employees use personal accounts, unapproved tools, and browser extensions outside IT visibility. Your DLP doesn't see it. Neither does your SIEM.</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">📋</div>
+          <div class="problem-icon" aria-hidden="true">📋</div>
           <h3>No audit trail</h3>
           <p>When an incident happens — a data breach, a compliance query, an IP dispute — you have no reliable record of what was sent to which AI, by whom, and when.</p>
         </div>
       </div>
 
       <div class="callout">
-        <span class="callout-icon">💡</span>
+        <span class="callout-icon" aria-hidden="true">💡</span>
         <p>OpenAI and Anthropic only log activity <em>inside their own platforms</em>. No vendor provides cross-tool governance. <strong>That gap is your exposure.</strong></p>
       </div>
     </div>
@@ -142,7 +210,7 @@
             <p>Browser extension, Claude Code hooks, API gateway, and agent transcripts collect interactions at the source — across every tool and surface.</p>
           </div>
         </div>
-        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-arrow" aria-hidden="true">→</div>
         <div class="pipeline-step">
           <div class="pipeline-num">02</div>
           <div class="pipeline-content">
@@ -150,7 +218,7 @@
             <p>Each event is standardised into a common schema regardless of which AI tool produced it. One format. One store.</p>
           </div>
         </div>
-        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-arrow" aria-hidden="true">→</div>
         <div class="pipeline-step">
           <div class="pipeline-num">03</div>
           <div class="pipeline-content">
@@ -158,7 +226,7 @@
             <p>Workers classify sensitivity (PII, secrets, IP, code), identify the tool and model, resolve user identity, and compute a risk score.</p>
           </div>
         </div>
-        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-arrow" aria-hidden="true">→</div>
         <div class="pipeline-step">
           <div class="pipeline-num">04</div>
           <div class="pipeline-content">
@@ -166,7 +234,7 @@
             <p>Each record is checked against your policy engine in real time. Violations trigger alerts. High-risk interactions can be blocked at the proxy layer.</p>
           </div>
         </div>
-        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-arrow" aria-hidden="true">→</div>
         <div class="pipeline-step">
           <div class="pipeline-num">05</div>
           <div class="pipeline-content">
@@ -174,7 +242,7 @@
             <p>The enriched record is appended to the immutable ledger. Raw content is never required — metadata, hashes, and risk signals are sufficient for most compliance needs.</p>
           </div>
         </div>
-        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-arrow" aria-hidden="true">→</div>
         <div class="pipeline-step">
           <div class="pipeline-num">06</div>
           <div class="pipeline-content">
@@ -197,21 +265,21 @@
         <div class="capture-group">
           <div class="capture-group-label capture-group-primary">Core coverage (v1)</div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-green"></span>
+            <span class="capture-dot capture-dot-green" aria-hidden="true"></span>
             <div>
               <strong>Claude Code</strong>
               <span>Hooks + session transcripts — full tool call visibility</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-green"></span>
+            <span class="capture-dot capture-dot-green" aria-hidden="true"></span>
             <div>
               <strong>Browser AI tools</strong>
               <span>Chrome extension — ChatGPT, Claude, Gemini, Copilot, Perplexity, and more</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-green"></span>
+            <span class="capture-dot capture-dot-green" aria-hidden="true"></span>
             <div>
               <strong>API gateway</strong>
               <span>Sanctioned OpenAI / Anthropic / Gemini API usage via proxy</span>
@@ -222,21 +290,21 @@
         <div class="capture-group">
           <div class="capture-group-label capture-group-secondary">Expanding coverage</div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-blue"></span>
+            <span class="capture-dot capture-dot-blue" aria-hidden="true"></span>
             <div>
               <strong>Cursor &amp; Windsurf</strong>
               <span>Enterprise telemetry APIs</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-blue"></span>
+            <span class="capture-dot capture-dot-blue" aria-hidden="true"></span>
             <div>
               <strong>VS Code ecosystem</strong>
               <span>Companion extension for Copilot and AI plugins</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-blue"></span>
+            <span class="capture-dot capture-dot-blue" aria-hidden="true"></span>
             <div>
               <strong>ChatGPT desktop</strong>
               <span>Telemetry-based visibility</span>
@@ -247,21 +315,21 @@
         <div class="capture-group">
           <div class="capture-group-label capture-group-future">Enterprise integrations</div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-grey"></span>
+            <span class="capture-dot capture-dot-grey" aria-hidden="true"></span>
             <div>
               <strong>DLP / SIEM / CASB</strong>
               <span>Bi-directional event feeds</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-grey"></span>
+            <span class="capture-dot capture-dot-grey" aria-hidden="true"></span>
             <div>
               <strong>Endpoint telemetry</strong>
               <span>Full desktop agent coverage</span>
             </div>
           </div>
           <div class="capture-item">
-            <span class="capture-dot capture-dot-grey"></span>
+            <span class="capture-dot capture-dot-grey" aria-hidden="true"></span>
             <div>
               <strong>Identity providers</strong>
               <span>Okta, Azure AD, Google Workspace</span>
@@ -280,42 +348,42 @@
 
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🔍</div>
+          <div class="feature-icon" aria-hidden="true">🔍</div>
           <h3>Risk scoring</h3>
           <p>Every interaction is scored low → critical based on data sensitivity, destination tool, user role, and policy match. Prioritise what matters.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🛡</div>
+          <div class="feature-icon" aria-hidden="true">🛡</div>
           <h3>Policy engine</h3>
           <p>Define rules for what can and cannot be sent to which AI tools. Violations are flagged in real time; enforcement can block at the proxy layer.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📊</div>
+          <div class="feature-icon" aria-hidden="true">📊</div>
           <h3>Usage analytics</h3>
           <p>Understand which teams use which tools, at what volume, and with what risk profile. Track adoption trends across the organisation.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🕵️</div>
+          <div class="feature-icon" aria-hidden="true">🕵️</div>
           <h3>Shadow AI detection</h3>
           <p>Identify usage of unapproved AI tools and personal accounts outside IT visibility. Quantify your unmanaged AI surface.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🤖</div>
+          <div class="feature-icon" aria-hidden="true">🤖</div>
           <h3>Agent monitoring</h3>
           <p>Capture tool calls, file reads, code execution, and web actions taken by coding agents like Claude Code and Cursor Composer.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📄</div>
+          <div class="feature-icon" aria-hidden="true">📄</div>
           <h3>Compliance reports</h3>
           <p>Generate audit-ready exports for SOC 2, ISO 27001, GDPR reviews, and internal investigations. Timestamped, immutable, exportable.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🔔</div>
+          <div class="feature-icon" aria-hidden="true">🔔</div>
           <h3>Real-time alerts</h3>
           <p>Slack and email notifications for policy violations, high-risk events, and anomalous usage patterns as they happen.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🔎</div>
+          <div class="feature-icon" aria-hidden="true">🔎</div>
           <h3>Incident investigation</h3>
           <p>Full session replay and timeline view for any user. When something goes wrong, you have the complete record to investigate.</p>
         </div>
@@ -352,19 +420,19 @@
 
       <div class="privacy-pillars">
         <div class="privacy-pillar">
-          <span>🔐</span>
+          <span aria-hidden="true">🔐</span>
           <span>Local inspection before upload</span>
         </div>
         <div class="privacy-pillar">
-          <span>🔒</span>
+          <span aria-hidden="true">🔒</span>
           <span>Encryption in transit and at rest</span>
         </div>
         <div class="privacy-pillar">
-          <span>👁</span>
+          <span aria-hidden="true">👁</span>
           <span>Strict role-based access controls</span>
         </div>
         <div class="privacy-pillar">
-          <span>🗓</span>
+          <span aria-hidden="true">🗓</span>
           <span>Configurable retention policies</span>
         </div>
       </div>
@@ -381,7 +449,7 @@
             <span class="analogy-co">OpenAI / Anthropic</span>
             <span class="analogy-is">are cloud providers</span>
           </div>
-          <div class="analogy-divider">—</div>
+          <div class="analogy-divider" aria-hidden="true">—</div>
           <div class="analogy-item">
             <span class="analogy-co">PanoptAI</span>
             <span class="analogy-is">is Datadog + Okta + Splunk<br />for AI usage</span>
@@ -453,61 +521,62 @@
   <section class="section section-cta" id="contact">
     <div class="container">
       <div class="cta-block">
-        <div class="cta-glow"></div>
+        <div class="cta-glow" aria-hidden="true"></div>
         <h2 class="cta-title">Are your employees leaking sensitive data into AI tools?</h2>
         <p class="cta-sub">Most companies don't know. A 14-day audit will tell you — at no cost, with no disruption to employees.</p>
-        <form class="cta-form" onsubmit="handleSubmit(event)">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Work email" required />
-          <input type="text" placeholder="Company" required />
-          <select>
+        <form class="cta-form" id="contact-form" data-endpoint="https://panoptai-contact.netlify.app/api/contact">
+          <label class="sr-only" for="cf-name">Your name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Your name" autocomplete="name" maxlength="100" required />
+          <label class="sr-only" for="cf-email">Work email</label>
+          <input id="cf-email" name="email" type="email" placeholder="Work email" autocomplete="email" inputmode="email" maxlength="254" required />
+          <label class="sr-only" for="cf-company">Company</label>
+          <input id="cf-company" name="company" type="text" placeholder="Company" autocomplete="organization" maxlength="150" required />
+          <label class="sr-only" for="cf-size">Company size</label>
+          <select id="cf-size" name="size">
             <option value="" disabled selected>Company size</option>
-            <option>1–50</option>
-            <option>51–200</option>
-            <option>201–1000</option>
-            <option>1000+</option>
+            <option value="1–50">1–50</option>
+            <option value="51–200">51–200</option>
+            <option value="201–1000">201–1000</option>
+            <option value="1000+">1000+</option>
           </select>
+          <div class="hp" aria-hidden="true">
+            <label for="cf-website">Leave this field empty</label>
+            <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
           <button type="submit" class="btn btn-primary btn-lg">Request early access</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
         <p class="cta-footnote">No credit card. No sales call required. Results in 48 hours.</p>
       </div>
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <span class="logo-icon">⬡</span>
+          <a href="/" class="logo">
+            <span class="logo-icon" aria-hidden="true">⬡</span>
             <span class="logo-text">Panopt<span class="logo-ai">AI</span></span>
           </a>
           <p>The AI usage compliance ledger for enterprise governance.</p>
         </div>
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer">
           <div class="footer-col">
-            <h4>Product</h4>
+            <h3>Product</h3>
             <a href="#how-it-works">How it works</a>
             <a href="#features">Features</a>
             <a href="#privacy">Privacy</a>
             <a href="#pricing">Pricing</a>
           </div>
           <div class="footer-col">
-            <h4>Company</h4>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact</a>
+            <h3>Company</h3>
+            <a href="#contact">Contact</a>
           </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms of service</a>
-            <a href="#">Security</a>
-            <a href="#">DPA</a>
-          </div>
-        </div>
+        </nav>
       </div>
       <div class="footer-bottom">
         <span>© 2026 PanoptAI. All rights reserved.</span>
@@ -516,6 +585,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
